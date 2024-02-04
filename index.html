@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/edbfca546f.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="w-11/12 m-auto">
     <div>
         <div> <!-- outside nav bar -->
             <div class="mx-auto my-2 p-2 w-max bg-slate-600 rounded-full">
@@ -21,23 +21,23 @@
         </div>
 
         <div>
-            <div class="flex flex-row justify-between p-4"> <!-- top nav bar-->
-                <img class="w-20" src="netflix.png">
-                <div class="relative flex items-center">
-                    <input class="py-1 ps-8 pe-2 rounded-full bg-slate-200 w-40" type="text" placeholder="Search...">
-                    <i class="absolute left-0 ps-3 fa-solid fa-microphone"></i>
+            <div class="relative">
+                <div class="flex flex-row justify-between py-4"> <!-- top nav bar-->
+                    <img class="w-20" src="netflix.png">
+                    <div class="relative flex items-center">
+                        <input class="py-1 ps-8 pe-2 rounded-full bg-slate-200 w-40" type="text" placeholder="Search...">
+                        <i class="absolute left-0 ps-3 fa-solid fa-microphone"></i>
+                    </div>
+                    <button><i onclick="toggleNav()" class="size-8 p-2 bg-red-600 text-white rounded-full fa-solid fa-bars"></i></button>
                 </div>
-                <button><i class="px-2.5 py-2 bg-red-600 rounded-full fa-solid fa-bars text-white"></i></button>
-                <div id="collapsible-nav" class="hidden absolute bg-white w-100">
-                    <ul>
-                        <li><a>Browse</a></li>
-                        <li><a>Wishlist</a></li>
-                        <li><a>Coming soon</a></li>
-                    </ul>
-                </div>
+                <ul id="collapsible-nav" class="hidden absolute bg-white w-full z-10">
+                    <li class="my-2"><a href="#">Browse</a></li>
+                    <li class="my-2"><a href="#">Wishlist</a></li>
+                    <li class="my-2"><a href="#">Coming soon</a></li>
+                </ul>
             </div>
 
-            <div class="relative p-4"> <!-- hero img -->
+            <div class="relative py-4"> <!-- hero img -->
                 <img src="stranger.jpg">
                 <div class="absolute top-8 right-8 text-white text-xs">
                     <img class="w-36" src="strange-logo.png">
@@ -49,14 +49,17 @@
                 </div>
             </div>
 
-            <div class="p-4">
+            <div class="py-4">
                 <h1>Popcorn Mania</h1>
             </div>
 
-            <div class="p-4">
+            <div class="py-4">
                 <h1>Continue Watching</h1>
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
