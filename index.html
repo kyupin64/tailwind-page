@@ -23,19 +23,19 @@
         <div>
             <div class="relative">
                 <div class="flex flex-row justify-between py-4"> <!-- top nav bar-->
-                    <img class="w-20 me-10" src="images/netflix.png">
+                    <img class="w-20 me-10 md:me-20" src="images/netflix.png">
                     <div class="relative flex items-center grow">
                         <input class="py-1 ps-8 pe-2 rounded-full bg-slate-200 w-5/6" type="text" placeholder="Search...">
                         <i class="absolute left-0 ps-3 fa-solid fa-microphone"></i>
                     </div>
-                    <button><i onclick="toggleNav()" class="size-8 p-2 bg-red-600 text-white rounded-full fa-solid fa-bars"></i></button>
+                    <button><i onclick="toggleNav()" class="lg:hidden size-8 p-2 bg-red-600 text-white rounded-full fa-solid fa-bars"></i></button>
                 </div>
                 <div id="collapsible-nav" class="hidden absolute w-full z-10 bg-slate-200">
                     <div class="flex justify-between">
-                        <ul class="pt-4">
-                            <li class="ms-5"><i class="p-2 text-red-600 fa-solid fa-circle-play"></i><a href="#">Browse</a></li>
-                            <li class="ms-5"><i class="p-2 text-red-600 fa-regular fa-heart"></i><a href="#">Wishlist</a></li>
-                            <li class="ms-5"><i class="p-2 text-red-600 fa-regular fa-calendar-plus"></i><a href="#">Coming soon</a></li>
+                        <ul class="pt-4 pb-6">
+                            <li class="ms-5"><i class="px-2 py-4 text-red-600 fa-solid fa-circle-play"></i><a href="#">Browse</a></li>
+                            <li class="ms-5"><i class="px-2 py-4 text-red-600 fa-regular fa-heart"></i><a href="#">Wishlist</a></li>
+                            <li class="ms-5"><i class="px-2 py-4 text-red-600 fa-regular fa-calendar-plus"></i><a href="#">Coming soon</a></li>
                         </ul>
                         <div class="flex p-5 flex-col items-end">
                             <div class="flex items-center px-4 bg-slate-600 rounded-full">
@@ -56,26 +56,26 @@
                             <h1 class="text-xl ps-5">New Trailers</h1>
                             <i class="fa-solid fa-fire text-red-600"></i>
                         </div>
-                        <div class="flex flex-col justify-around flex-wrap">
-                            <div class="relative m-5 w-72 h-40">
-                                <img class="w-72 h-40 object-cover object-bottom" src="images/damsel.jpg">
-                                <div class="absolute bottom-0 w-full flex justify-between items-center px-4 py-1 bg-slate-500/75 text-white">
-                                    <h2>Damsel</h2>
+                        <div class="flex flex-col md:flex-row items-center">
+                            <div class="relative m-5 w-11/12 md:w-full h-full">
+                                <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom" src="images/damsel.jpg">
+                                <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-slate-500/75 text-white text-lg sm:text-3xl md:text-xl">
+                                    <h2 class="">Damsel</h2>
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
                             
-                            <div class="relative m-5 w-72 h-40">
-                                <img class="w-72 h-40 object-cover object-bottom" src="images/code-8.jpg">
-                                <div class="absolute bottom-0 w-full flex justify-between items-center px-4 py-1 bg-slate-500/75 text-white">
+                            <div class="relative m-5 w-11/12 md:w-full h-full">
+                                <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom" src="images/code-8.jpg">
+                                <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-slate-500/75 text-white text-lg sm:text-3xl md:text-xl">
                                     <h2>Code 8: Part II</h2>
                                     <i class="fa-solid fa-play"></i>
                                 </div>
                             </div>
                             
-                            <div class="relative m-5 w-72 h-40">
-                                <img class="w-72 h-40 object-cover object-bottom" src="images/griselda.jpg">
-                                <div class="absolute bottom-0 w-full flex justify-between items-center px-4 py-1 bg-slate-500/75 text-white">
+                            <div class="relative m-5 w-11/12 md:w-full h-full">
+                                <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom" src="images/griselda.jpg">
+                                <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-slate-500/75 text-white text-lg sm:text-3xl md:text-xl">
                                     <h2>Griselda</h2>
                                     <i class="fa-solid fa-play"></i>
                                 </div>
@@ -91,8 +91,8 @@
                     <h2 class="pt-1 md:hidden text-xl">The Good Place</h2>
                     <p class="pb-1 text-md lg:text-xl">2016 - Sitcom - 4 Seasons</p>
                     <div class="flex md:justify-center text-sm gap-4 lg:text-lg lg:py-2">
-                        <button class="bg-red-600 rounded-xl py-2 px-4">Watch</button>
-                        <button class="border-2 md:bg-white rounded-xl py-2 px-4 text-black">+</button>
+                        <button class="bg-red-600 text-white rounded-xl py-2 px-4">Watch</button>
+                        <button class="border-2 md:bg-white rounded-xl py-.5 px-2 text-black text-xl">+</button>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                 <h1 class="text-2xl">Popcorn Mania</h1>
                 <div class="overflow-auto whitespace-nowrap">
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/wednesday.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/wednesday.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="absolute bottom-12 w-full"><img class="m-auto w-28 object-cover" src="images/wed-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
@@ -114,7 +114,7 @@
                     </div>
 
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/orange.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/orange.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/orange-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
@@ -127,7 +127,7 @@
                     </div>
 
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/bojack.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/bojack.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/bojack-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
@@ -140,8 +140,8 @@
                     </div>
                     
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover object-top md:hidden" src="images/queen-small.jpg"> 
-                        <img class="hidden md:block h-44 w-44 object-cover" src="images/queen.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover object-top md:hidden" src="images/queen-small.jpg"> 
+                        <img class="hidden md:block h-44 w-44 md:w-80 object-cover" src="images/queen.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
@@ -153,9 +153,9 @@
                     </div>
                     
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/jane.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/jane.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute top-4 right-1"><img class="w-20 object-cover" src="images/jane-logo.png"></div>
+                        <div class="absolute top-4 right-1 md:top-10 md:right-2"><img class="w-20 md:w-32 object-cover" src="images/jane-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
                                 <h2 class="text-sm">Jane the Virgin</h2>
@@ -171,9 +171,9 @@
                 <h1 class="text-2xl">Continue Watching</h1>
                 <div class="overflow-auto whitespace-nowrap">
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover object-right" src="images/midnight.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover object-right" src="images/midnight.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute bottom-12 left-4"><img class="w-20 object-cover" src="images/midnight-logo.png"></div>
+                        <div class="absolute bottom-12 left-4 md:left-32"><img class="w-20 object-cover" src="images/midnight-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
                                 <h2 class="text-sm">The Midnight Gospel</h2>
@@ -184,7 +184,7 @@
                     </div>
 
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/stranger.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/stranger.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/strange-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
@@ -197,7 +197,7 @@
                     </div>
 
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/disenchant.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/disenchant.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/dis-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
@@ -210,7 +210,7 @@
                     </div>
 
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/100.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/100.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
@@ -222,7 +222,7 @@
                     </div>
 
                     <div class="inline-block relative">
-                        <img class="h-44 w-44 object-cover" src="images/pain.jpg"> 
+                        <img class="h-44 w-44 md:w-80 object-cover" src="images/pain.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
                         <div class="absolute bottom-12 w-full"><img class="m-auto w-28 object-cover" src="images/pain-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
