@@ -7,11 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/edbfca546f.js" crossorigin="anonymous"></script>
 </head>
-<body class="w-11/12 m-auto">
-    <div class="h-dvh flex justify-center items-center gap-4">
+<body class="relative h-dvh w-dvw">
+    <img class="h-dvh w-dvw object-cover object-top" src="images/bg.jpg">
+    <div class="absolute flex justify-center items-center gap-4 w-11/12 top-0 left-4 sm:left-7 md:left-9 lg:left-10">
         <div class="h-dvh hidden lg:block"> <!-- outside nav bar -->
             <div class="flex h-dvh items-center">
-                <div class="flex flex-col gap-2 px-1 py-2 justify-around items-center bg-slate-600 rounded-full">
+                <div class="flex flex-col gap-2 px-2 py-4 justify-around items-center bg-gray-700/75 border border-gray-500/75 rounded-full">
                     <a class="hover:text-red-600" href="#"><i class="p-2 bg-white rounded-full fa-regular fa-circle-play"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2.5 bg-white rounded-full fa-solid fa-border-all"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2 bg-white rounded-full fa-solid fa-display"></i></a>
@@ -22,8 +23,8 @@
             </div>
         </div>
 
-        <div class="w-full flex lg:gap-4 h-dvh items-center">
-            <div class="hidden lg:block bg-slate-200 py-6 w-56 h-5/6 overflow-auto">
+        <div class="w-full flex h-dvh items-center">
+            <div class="hidden lg:block bg-gray-700/75 text-white py-6 w-56 h-5/6 border border-gray-500/75 overflow-auto rounded-xl">
                 <img class="w-40 px-4 pb-4" src="images/netflix.png">
 
                 <ul class="pt-4 pb-6 text-sm">
@@ -39,24 +40,24 @@
                     </div>
                     <div class="flex flex-col items-center">
                         <div class="relative m-2 w-11/12 h-full">
-                            <img src="images/damsel.jpg">
-                            <div class="absolute bottom-0 w-full flex justify-between items-center px-2 py-1 bg-slate-500/75 text-white text-md">
+                            <img class="rounded-xl" src="images/damsel.jpg">
+                            <div class="absolute bottom-0 w-full flex justify-between items-center px-2 py-1 bg-gray-500/75 text-white text-md rounded-xl">
                                 <h2 class="">Damsel</h2>
                                 <a class="hover:text-red-600" href="#"><i class="fa-solid fa-play"></i></a>
                             </div>
                         </div>
                         
                         <div class="relative m-2 w-11/12 h-full">
-                            <img src="images/code-8.jpg">
-                            <div class="absolute bottom-0 w-full flex justify-between items-center px-2 py-1 bg-slate-500/75 text-white text-md">
+                            <img class="rounded-xl" src="images/code-8.jpg">
+                            <div class="absolute bottom-0 w-full flex justify-between items-center px-2 py-1 bg-gray-500/75 text-white text-md rounded-xl">
                                 <h2 class="">Code 8: Part II</h2>
                                 <a class="hover:text-red-600" href="#"><i class="fa-solid fa-play"></i></a>
                             </div>
                         </div>
                         
                         <div class="relative m-2 w-11/12 h-full">
-                            <img src="images/griselda.jpg">
-                            <div class="absolute bottom-0 w-full flex justify-between items-center px-2 py-1 bg-slate-500/75 text-white text-md">
+                            <img class="rounded-xl" src="images/griselda.jpg">
+                            <div class="absolute bottom-0 w-full flex justify-between items-center px-2 py-1 bg-gray-500/75 text-white text-md rounded-xl">
                                 <h2 class="">Griselda</h2>
                                 <a class="hover:text-red-600" href="#"><i class="fa-solid fa-play"></i></a>
                             </div>
@@ -64,20 +65,20 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full lg:w-full h-5/6 overflow-auto px-4">
+            <div class="w-full lg:w-full h-5/6 overflow-auto px-4 bg-gray-600/75 border border-gray-500/75 text-white rounded-xl">
                 <div class="relative">
                     <div class="flex flex-row justify-between py-4"> <!-- top nav bar-->
                         <img class="w-20 me-10 md:me-20 lg:hidden" src="images/netflix.png">
                         <div class="relative flex items-center grow">
-                            <input class="py-1 ps-8 pe-2 rounded-full bg-slate-200 w-5/6" type="text" placeholder="Search...">
-                            <a class="absolute left-0 ps-3 hover:text-red-600" href="#"><i class="fa-solid fa-microphone"></i></a>
+                            <input class="py-1 ps-8 pe-2 rounded-full bg-gray-300 w-5/6 text-black" type="text" placeholder="Search...">
+                            <a class="absolute left-0 ps-3 text-black hover:text-red-600" href="#"><i class="fa-solid fa-microphone"></i></a>
                         </div>
                         <div class="hidden lg:flex items-center">
                             <div class="p-2">
-                                <a href="#"><i class="p-2 bg-white rounded-full fa-regular fa-bell hover:text-red-600"></i></a>
+                                <a href="#"><i class="p-2 bg-white text-black rounded-full fa-regular fa-bell hover:text-red-600"></i></a>
                             </div>
-                            <div class="flex items-center px-2 py-1 bg-slate-600 rounded-full max-h-12">
-                                <a href="#"><i class="p-2 bg-white rounded-full fa-regular fa-circle-user hover:bg-red-600 hover:text-white"></i></a>
+                            <div class="flex items-center px-2 py-1 bg-gray-700 rounded-full max-h-12">
+                                <a href="#"><i class="p-2 bg-white text-black rounded-full fa-regular fa-circle-user hover:bg-red-600 hover:text-white"></i></a>
                                 <div class="text-white ps-6 pe-2">
                                     <h3 class="text-sm">Lauren</h3>
                                     <p class="text-xs">@kyupin</p>
@@ -86,7 +87,7 @@
                         </div>
                         <button><i onclick="toggleNav()" class="lg:hidden size-8 p-2 bg-red-600 text-white rounded-full fa-solid fa-bars"></i></button>
                     </div>
-                    <div id="collapsible-nav" class="hidden absolute w-full z-10 bg-slate-200">
+                    <div id="collapsible-nav" class="hidden absolute w-full z-10 bg-gray-300 text-black">
                         <div class="flex justify-between">
                             <ul class="pt-4 pb-6">
                                 <li class="ms-5"><i class="px-2 py-4 text-red-600 fa-solid fa-circle-play"></i><a class="hover:text-red-600" href="#">Browse</a></li>
@@ -94,7 +95,7 @@
                                 <li class="ms-5"><i class="px-2 py-4 text-red-600 fa-regular fa-calendar-plus"></i><a class="hover:text-red-600" href="#">Coming soon</a></li>
                             </ul>
                             <div class="flex p-5 flex-col items-end">
-                                <div class="flex items-center px-2 bg-slate-600 rounded-full">
+                                <div class="flex items-center px-2 bg-gray-600 rounded-full">
                                     <a href="#"><i class="p-2 bg-white rounded-full fa-regular fa-circle-user hover:bg-red-600 hover:text-white"></i></a>
                                     <div class="text-white ps-3 pe-1">
                                         <h3 class="pt-1">Lauren</h3>
@@ -114,24 +115,24 @@
                             </div>
                             <div class="flex flex-col md:flex-row items-center">
                                 <div class="relative m-5 w-11/12 md:w-full h-full">
-                                    <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom" src="images/damsel.jpg">
-                                    <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-slate-500/75 text-white text-lg sm:text-3xl md:text-xl">
+                                    <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom rounded-xl" src="images/damsel.jpg">
+                                    <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-gray-500/75 text-white text-lg sm:text-3xl md:text-xl rounded-xl">
                                         <h2 class="">Damsel</h2>
                                         <a class="hover:text-red-600" href="#"><i class="fa-solid fa-play"></i></a>
                                     </div>
                                 </div>
                                 
                                 <div class="relative m-5 w-11/12 md:w-full h-full">
-                                    <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom" src="images/code-8.jpg">
-                                    <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-slate-500/75 text-white text-lg sm:text-3xl md:text-xl">
+                                    <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom rounded-xl" src="images/code-8.jpg">
+                                    <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-gray-500/75 text-white text-lg sm:text-3xl md:text-xl rounded-xl">
                                         <h2>Code 8: Part II</h2>
                                         <a class="hover:text-red-600" href="#"><i class="fa-solid fa-play"></i></a>
                                     </div>
                                 </div>
                                 
                                 <div class="relative m-5 w-11/12 md:w-full h-full">
-                                    <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom" src="images/griselda.jpg">
-                                    <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-slate-500/75 text-white text-lg sm:text-3xl md:text-xl">
+                                    <img class="h-5/6 w-full md:w-72 md:h-36 md:object-cover md:object-bottom rounded-xl" src="images/griselda.jpg">
+                                    <div class="absolute bottom-0 w-full flex justify-between items-center px-10 md:px-4 py-4 md:py-1 bg-gray-500/75 text-white text-lg sm:text-3xl md:text-xl rounded-xl">
                                         <h2>Griselda</h2>
                                         <a class="hover:text-red-600" href="#"><i class="fa-solid fa-play"></i></a>
                                     </div>
@@ -142,14 +143,14 @@
                 </div>
 
                 <div class="relative py-4"> <!-- hero img -->
-                    <img class="lg:hidden" src="images/good-place.jpg">
-                    <img class="hidden lg:block" src="images/good-big.jpg">
+                    <img class="lg:hidden rounded-xl" src="images/good-place.jpg">
+                    <img class="hidden lg:block rounded-xl" src="images/good-big.jpg">
                     <div class="md:absolute flex flex-col justify-center md:bottom-20 md:right-20 md:text-white lg:bottom-6 lg:right-18 xl:bottom-8 xl:right-32 2xl:bottom-10 2xl:right-40">
                         <h2 class="pt-1 md:hidden text-xl">The Good Place</h2>
                         <p class="pb-1 text-md lg:text-black">2016 - Sitcom - 4 Seasons</p>
                         <div class="flex md:justify-center text-sm gap-4">
                             <button class="border-2 bg-white text-black rounded-xl py-2 px-4 lg:py-0.5 hover:bg-red-600 hover:text-white hover:border-red-600">Watch</button>
-                            <button class="border-2 md:bg-white rounded-xl py-0.5 px-2 text-black text-xl lg:py-0 hover:bg-red-600 hover:text-white hover:border-red-600">+</button>
+                            <button class="border-2 md:bg-white rounded-xl py-0.5 px-2 text-white md:text-black text-xl lg:py-0 hover:bg-red-600 hover:text-white hover:border-red-600">+</button>
                         </div>
                     </div>
                 </div>
@@ -158,10 +159,10 @@
                     <h1 class="text-2xl pb-4">Popcorn Mania</h1>
                     <div class="overflow-auto whitespace-nowrap">
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/wednesday.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/wednesday.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute bottom-12 w-full"><img class="m-auto w-28 object-cover" src="images/wed-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">Wednesday</h2></a>
                                     <p class="text-xs">Horror - 1 Season</p>
@@ -171,10 +172,10 @@
                         </div>
 
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/orange.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/orange.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/orange-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">Orange is the New Black</h2></a>
                                     <p class="text-xs">Drama - 7 Seasons</p>
@@ -184,10 +185,10 @@
                         </div>
 
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/bojack.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/bojack.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/bojack-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">BoJack Horseman</h2></a>
                                     <p class="text-xs">Tragicomedy - 6 Seasons</p>
@@ -197,10 +198,10 @@
                         </div>
                         
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover object-top md:hidden" src="images/queen-small.jpg"> 
-                            <img class="hidden md:block h-44 w-44 md:w-80 object-cover" src="images/queen.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <img class="h-44 w-44 md:w-80 object-cover object-top md:hidden rounded-xl" src="images/queen-small.jpg"> 
+                            <img class="hidden md:block h-44 w-44 md:w-80 object-cover rounded-xl" src="images/queen.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">The Queen's Gambit</h2></a>
                                     <p class="text-xs">Drama - 1 Season</p>
@@ -210,10 +211,10 @@
                         </div>
                         
                         <div class="inline-block relative">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/jane.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/jane.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute top-4 right-1 md:top-10 md:right-2"><img class="w-20 md:w-32 object-cover" src="images/jane-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">Jane the Virgin</h2></a>
                                     <p class="text-xs">Drama - 5 Seasons</p>
@@ -228,10 +229,10 @@
                     <h1 class="text-2xl pb-4">Continue Watching</h1>
                     <div class="overflow-auto whitespace-nowrap">
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover object-right" src="images/midnight.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover object-right rounded-xl" src="images/midnight.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute bottom-12 left-4 md:left-32"><img class="w-20 object-cover" src="images/midnight-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">The Midnight Gospel</h2></a>
                                     <p class="text-xs">Episode 8</p>
@@ -241,10 +242,10 @@
                         </div>
 
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/stranger.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/stranger.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/strange-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">Stranger Things</h2></a>
                                     <p class="text-xs">Season 4, Episode 7</p>
@@ -254,10 +255,10 @@
                         </div>
 
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/disenchant.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/disenchant.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/dis-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">Disenchantment</h2></a>
                                     <p class="text-xs">Season 2, Episode 5</p>
@@ -267,9 +268,9 @@
                         </div>
 
                         <div class="inline-block relative me-4">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/100.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/100.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">The 100</h2></a>
                                     <p class="text-xs">Season 3, Episode 1</p>
@@ -279,10 +280,10 @@
                         </div>
 
                         <div class="inline-block relative">
-                            <img class="h-44 w-44 md:w-80 object-cover" src="images/pain.jpg"> 
-                            <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                            <img class="h-44 w-44 md:w-80 object-cover rounded-xl" src="images/pain.jpg"> 
+                            <div class="bottom-10 w-full h-1/3 absolute bg-gradient-to-t from-black"></div>
                             <div class="absolute bottom-12 w-full"><img class="m-auto w-28 object-cover" src="images/pain-logo.png"></div>
-                            <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div class="flex justify-between bg-black text-white items-center p-2 rounded-xl z-10">
                                 <div>
                                     <a href="#"><h2 class="text-sm hover:text-red-600">Painkiller</h2></a>
                                     <p class="text-xs">Episode 5</p>
