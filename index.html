@@ -23,9 +23,9 @@
         <div>
             <div class="relative">
                 <div class="flex flex-row justify-between py-4"> <!-- top nav bar-->
-                    <img class="w-20" src="netflix.png">
-                    <div class="relative flex items-center">
-                        <input class="py-1 ps-8 pe-2 rounded-full bg-slate-200 w-40" type="text" placeholder="Search...">
+                    <img class="w-20 me-10" src="images/netflix.png">
+                    <div class="relative flex items-center grow">
+                        <input class="py-1 ps-8 pe-2 rounded-full bg-slate-200 w-5/6" type="text" placeholder="Search...">
                         <i class="absolute left-0 ps-3 fa-solid fa-microphone"></i>
                     </div>
                     <button><i onclick="toggleNav()" class="size-8 p-2 bg-red-600 text-white rounded-full fa-solid fa-bars"></i></button>
@@ -54,80 +54,80 @@
             </div>
 
             <div class="relative py-4"> <!-- hero img -->
-                <img src="stranger.jpg">
-                <div class="absolute top-8 right-8 text-white text-xs">
-                    <img class="w-36" src="strange-logo.png">
-                    <p>2016 - Thriller - 4 Seasons</p>
-                    <div>
-                        <button class="bg-red-600 rounded-xl py-2 px-4 me-4">Watch</button>
-                        <button class="bg-white rounded-xl py-2 px-4 text-black">+</button>
+                <img src="images/good-place.jpg">
+                <div class="md:absolute flex flex-col justify-center md:bottom-32 md:right-32 md:text-white">
+                    <h2 class="pt-1 md:hidden text-xl">The Good Place</h2>
+                    <p class="pb-1 text-md">2016 - Sitcom - 4 Seasons</p>
+                    <div class="flex md:justify-center text-sm gap-4">
+                        <button class="bg-red-600 rounded-xl py-2 px-4">Watch</button>
+                        <button class="border-2 rounded-xl py-2 px-4 text-black">+</button>
                     </div>
                 </div>
             </div>
 
             <div class="py-4">
-                <h1>Popcorn Mania</h1>
+                <h1 class="text-2xl">Popcorn Mania</h1>
                 <div class="overflow-auto whitespace-nowrap">
-                    <div class="inline-block relative m-2">
-                        <img class="h-44 w-40 object-cover" src="stranger.jpg"> 
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/wednesday.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="strange-logo.png"></div>
+                        <div class="absolute bottom-12 w-full"><img class="m-auto w-28 object-cover" src="images/wed-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
-                                <h2 class="text-sm">Stranger Things</h2>
-                                <p class="text-xs">Thriller - 4 Seasons</p>
+                                <h2 class="text-sm">Wednesday</h2>
+                                <p class="text-xs">Horror - 1 Season</p>
                             </div>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
 
-                    <div class="inline-block relative m-2">
-                        <img class="h-44 w-40 object-cover" src="stranger.jpg"> 
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/orange.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="strange-logo.png"></div>
+                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/orange-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
-                                <h2 class="text-sm">Stranger Things</h2>
-                                <p class="text-xs">Thriller - 4 Seasons</p>
+                                <h2 class="text-sm">Orange is the New Black</h2>
+                                <p class="text-xs">Drama - 7 Seasons</p>
                             </div>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
 
-                    <div class="inline-block relative m-2">
-                        <img class="h-44 w-40 object-cover" src="stranger.jpg"> 
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/bojack.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="strange-logo.png"></div>
+                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/bojack-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
-                                <h2 class="text-sm">Stranger Things</h2>
-                                <p class="text-xs">Thriller - 4 Seasons</p>
+                                <h2 class="text-sm">BoJack Horseman</h2>
+                                <p class="text-xs">Tragicomedy - 6 Seasons</p>
                             </div>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
                     
-                    <div class="inline-block relative m-2">
-                        <img class="h-44 w-40 object-cover" src="stranger.jpg"> 
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover object-top md:hidden" src="images/queen-small.jpg"> 
+                        <img class="hidden md:block h-44 w-44 object-cover" src="images/queen.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="strange-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
-                                <h2 class="text-sm">Stranger Things</h2>
-                                <p class="text-xs">Thriller - 4 Seasons</p>
+                                <h2 class="text-sm">The Queen's Gambit</h2>
+                                <p class="text-xs">Drama - 1 Season</p>
                             </div>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
                     
-                    <div class="inline-block relative m-2">
-                        <img class="h-44 w-40 object-cover" src="stranger.jpg"> 
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/jane.jpg"> 
                         <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
-                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="strange-logo.png"></div>
+                        <div class="absolute top-4 right-1"><img class="w-20 object-cover" src="images/jane-logo.png"></div>
                         <div class="flex justify-between bg-black text-white items-center p-2">
                             <div>
-                                <h2 class="text-sm">Stranger Things</h2>
-                                <p class="text-xs">Thriller - 4 Seasons</p>
+                                <h2 class="text-sm">Jane the Virgin</h2>
+                                <p class="text-xs">Drama - 5 Seasons</p>
                             </div>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
@@ -136,7 +136,72 @@
             </div>
 
             <div class="py-4">
-                <h1>Continue Watching</h1>
+                <h1 class="text-2xl">Continue Watching</h1>
+                <div class="overflow-auto whitespace-nowrap">
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover object-right" src="images/midnight.jpg"> 
+                        <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                        <div class="absolute bottom-12 left-4"><img class="w-20 object-cover" src="images/midnight-logo.png"></div>
+                        <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div>
+                                <h2 class="text-sm">The Midnight Gospel</h2>
+                                <p class="text-xs">Episode 8</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/stranger.jpg"> 
+                        <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/strange-logo.png"></div>
+                        <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div>
+                                <h2 class="text-sm">Stranger Things</h2>
+                                <p class="text-xs">Season 4, Episode 7</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/disenchant.jpg"> 
+                        <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                        <div class="absolute top-1 w-full"><img class="m-auto w-28 object-cover" src="images/dis-logo.png"></div>
+                        <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div>
+                                <h2 class="text-sm">Disenchantment</h2>
+                                <p class="text-xs">Season 2, Episode 5</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/100.jpg"> 
+                        <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                        <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div>
+                                <h2 class="text-sm">The 100</h2>
+                                <p class="text-xs">Season 3, Episode 1</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                    <div class="inline-block relative">
+                        <img class="h-44 w-44 object-cover" src="images/pain.jpg"> 
+                        <div class="bottom-12 w-full h-1/6 absolute bg-gradient-to-t from-black"></div>
+                        <div class="absolute bottom-12 w-full"><img class="m-auto w-28 object-cover" src="images/pain-logo.png"></div>
+                        <div class="flex justify-between bg-black text-white items-center p-2">
+                            <div>
+                                <h2 class="text-sm">Painkiller</h2>
+                                <p class="text-xs">Episode 5</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
