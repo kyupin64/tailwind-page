@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/edbfca546f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="output.css">
 </head>
 <body class="relative h-dvh w-dvw">
     <img class="h-dvh w-dvw object-cover object-top" src="images/bg.jpg">
     <div class="absolute flex justify-center items-center gap-4 w-11/12 top-0 left-4 sm:left-7 md:left-9 lg:left-10">
-        <div class="h-dvh hidden lg:block"> <!-- outside nav bar -->
+
+        <!-- outside nav bar -->
+        <div class="h-dvh hidden lg:block">
             <div class="flex h-dvh items-center">
                 <div class="flex flex-col gap-2 px-2 py-4 justify-around items-center bg-gray-700/75 border border-gray-500/75 rounded-full">
-                    <a class="hover:text-red-600" href="#"><i class="p-2 bg-gray-200 rounded-full fa-regular fa-circle-play"></i></a>
+                    <a class="text-white hover:text-black active" href="index.html"><i class="p-2 bg-red-600 rounded-full fa-regular fa-circle-play"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2.5 bg-gray-200 rounded-full fa-solid fa-border-all"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2 bg-gray-200 rounded-full fa-solid fa-display"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2 bg-gray-200 rounded-full fa-solid fa-house-chimney-user"></i></a>
@@ -23,6 +25,7 @@
             </div>
         </div>
 
+        <!-- left nav and trailers -->
         <div class="w-full flex h-dvh items-center">
             <div class="hidden lg:block bg-gray-700/75 text-white py-6 w-56 h-5/6 border border-gray-500/75 rounded-l-xl">
                 <img class="w-40 px-4 pb-4" src="images/netflix.png">
@@ -65,13 +68,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- right section -->
             <div class="w-full lg:w-full h-5/6 overflow-auto px-4 bg-gray-600/75 border border-gray-500/75 text-white rounded-xl lg:rounded-l-none">
                 <div class="relative">
-                    <div class="flex flex-row justify-between py-4"> <!-- top nav bar-->
+
+                    <!-- top nav bar-->
+                    <div class="flex flex-row justify-between py-4">
                         <img class="w-20 me-10 md:me-20 lg:hidden" src="images/netflix.png">
                         <div class="relative flex items-center grow">
-                            <input class="py-1 ps-8 pe-2 rounded-full bg-gray-500 w-5/6 text-black" type="text" placeholder="Search...">
-                            <a class="absolute left-0 ps-3 text-gray-200 hover:text-red-600" href="#"><i class="fa-solid fa-microphone"></i></a>
+                            <input class="py-1 ps-8 pe-2 rounded-full bg-gray-300 w-5/6 text-red-600" type="text" placeholder="Search...">
+                            <a class="absolute left-0 ps-3 text-gray-700 hover:text-red-600" href="#"><i class="fa-solid fa-microphone"></i></a>
                         </div>
                         <div class="hidden lg:flex items-center">
                             <div class="p-2">
@@ -87,6 +94,8 @@
                         </div>
                         <button><i onclick="toggleNav()" id="nav-button" class="lg:hidden size-8 p-2 bg-red-600 text-white rounded-full fa-solid fa-bars"></i></button>
                     </div>
+
+                    <!-- collapsible nav and trailers -->
                     <div id="collapsible-nav" class="hidden absolute w-full z-10 bg-gray-700 text-black rounded-xl lg:hidden text-white">
                         <div class="flex justify-between">
                             <ul class="pt-4 pb-6">
@@ -142,7 +151,8 @@
                     </div>
                 </div>
 
-                <div class="relative py-4"> <!-- hero img -->
+                <!-- hero img -->
+                <div class="relative py-4">
                     <img class="lg:hidden rounded-xl" src="images/good-place.jpg">
                     <img class="hidden lg:block rounded-xl" src="images/good-big.jpg">
                     <div class="md:absolute flex flex-col justify-center md:bottom-20 md:right-20 md:text-white lg:bottom-6 lg:right-18 xl:bottom-8 xl:right-32 2xl:bottom-10 2xl:right-40">
@@ -155,6 +165,7 @@
                     </div>
                 </div>
 
+                <!-- scrollable top picks for you row -->
                 <div class="py-4 text-white">
                     <h1 class="text-2xl pb-4 font-bold">Top Picks For You</h1>
                     <div class="overflow-auto whitespace-nowrap">
@@ -224,6 +235,7 @@
                     </div>
                 </div>
 
+                <!-- scrollable continue watching row -->
                 <div class="py-4 text-white">
                     <h1 class="text-2xl pb-4 font-bold">Continue Watching</h1>
                     <div class="overflow-auto whitespace-nowrap">
