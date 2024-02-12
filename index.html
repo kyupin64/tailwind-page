@@ -14,8 +14,8 @@
         <!-- outside nav bar -->
         <div class="h-dvh hidden lg:block">
             <div class="flex h-dvh items-center">
-                <div class="flex flex-col gap-2 px-2 py-4 justify-around items-center bg-gray-700/75 border border-gray-500/75 rounded-full">
-                    <a class="text-white hover:text-black active" href="index.html"><i class="p-2 bg-red-600 rounded-full fa-regular fa-circle-play"></i></a>
+                <div class="flex flex-col gap-2 px-2 py-4 justify-around items-center bg-gray-700/75 backdrop-blur-xs border border-gray-500/75 rounded-full">
+                    <a class="text-white hover:text-black" href="index.html"><i class="p-2 bg-red-600 rounded-full fa-regular fa-circle-play"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2.5 bg-gray-200 rounded-full fa-solid fa-border-all"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2 bg-gray-200 rounded-full fa-solid fa-display"></i></a>
                     <a class="hover:text-red-600" href="#"><i class="p-2 bg-gray-200 rounded-full fa-solid fa-house-chimney-user"></i></a>
@@ -25,9 +25,12 @@
             </div>
         </div>
 
-        <!-- left nav and trailers -->
+
+        <!-- main content -->
         <div class="w-full flex h-dvh items-center">
-            <div class="hidden lg:block bg-gray-700/75 text-white py-6 w-56 h-5/6 border border-gray-500/75 rounded-l-xl">
+
+            <!-- left nav and trailers -->
+            <div class="hidden lg:block bg-gray-700/75 backdrop-blur-xs text-white py-6 w-56 h-5/6 border border-gray-500/75 rounded-l-xl">
                 <img class="w-40 px-4 pb-4" src="images/netflix.png">
 
                 <ul class="pt-4 pb-6 text-sm">
@@ -70,14 +73,14 @@
             </div>
 
             <!-- right section -->
-            <div class="w-full lg:w-full h-5/6 overflow-auto px-4 bg-gray-600/75 border border-gray-500/75 text-white rounded-xl lg:rounded-l-none">
+            <div class="w-full lg:w-full h-5/6 overflow-auto px-4 bg-gray-600/75 backdrop-blur-xs border border-gray-500/75 text-white rounded-xl lg:rounded-l-none">
                 <div class="relative">
 
                     <!-- top nav bar-->
                     <div class="flex flex-row justify-between py-4">
                         <img class="w-20 me-10 md:me-20 lg:hidden" src="images/netflix.png">
                         <div class="relative flex items-center grow">
-                            <input class="py-1 ps-8 pe-2 rounded-full bg-gray-300 w-5/6 text-red-600" type="text" placeholder="Search...">
+                            <input class="py-1 ps-8 pe-2 rounded-full bg-gray-200 w-5/6 lg:w-2/4 text-red-600" type="text" placeholder="Search...">
                             <a class="absolute left-0 ps-3 text-gray-700 hover:text-red-600" href="#"><i class="fa-solid fa-microphone"></i></a>
                         </div>
                         <div class="hidden lg:flex items-center">
