@@ -4,7 +4,7 @@ GitHub Pages: https://kyupin64.github.io/tailwind-page/
 
 Git Log: [log.txt](log.txt)
 
-Background image source: [papers.co](https://www.google.com/search?q=dark+calming+wallpaper&tbm=isch#imgrc=YOGTLh5s5G4IzM)
+Background image source: [papers.co](https://papers.co/desktop/ml11-lake-mountain-dark-calm-nature/)
 
 Tailwind makes it very easy to add styles and make your website adaptable to different screen sizes just by adding classes. It's similar to Bootstrap, but in my opinion it's much easier to use and has many more class options so you don't have to use nearly as much customization.
 
