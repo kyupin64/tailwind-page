@@ -13,7 +13,7 @@ I chose to replicate the first Netflix design, the home page. It's adaptive to s
 I didn't know how to download Tailwind and customize it, and I didn't know how useful it could be until I was already pretty much done with the project. I still figured out how to download it and got the config working, but I didn't really do much customization. I added a few things to the config file mostly to show I know how it works and for fun. Thanks for reading, and I hope you enjoy my website!
 
 
-    Key commits:
+Key commits:
 
 Add scrolling pictures to popcorn mania
 
